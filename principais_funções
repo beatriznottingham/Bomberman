@@ -1,0 +1,49 @@
+// principais funções divididas por categorias
+// inicialização e finalização
+InitWindow(width, height, "Título") // → Cria uma janela.
+WindowShouldClose() // → Verifica se a janela deve fechar.
+CloseWindow() // → Fecha a janela e limpa recursos alocados.
+InitAudioDevice() // → Inicializa o sistema de áudio.
+CloseAudioDevice() // → Finaliza o sistema de áudio.
+
+// desenho e renderização
+BeginDrawing() // → Inicia o processo de desenho.
+ClearBackground(COLOR) // → Define a cor de fundo.
+DrawText("Texto", x, y, fontSize, COLOR) // → Escreve texto na tela.
+DrawRectangle(x, y, largura, altura, COLOR) // → Desenha um retângulo.
+DrawCircle(x, y, raio, COLOR) // → Desenha um círculo.
+DrawLine(x1, y1, x2, y2, COLOR) // → Desenha uma linha.
+EndDrawing() // → Finaliza o processo de desenho.
+
+// entrada do usuário, teclado e mouse.
+IsKeyDown(KEY_A) // → Retorna true enquanto a tecla está pressionada.
+IsKeyPressed(KEY_SPACE) // → Retorna true apenas quando a tecla é pressionada.
+IsMouseButtonDown(MOUSE_LEFT_BUTTON) // → Verifica se o botão do mouse está pressionado.
+GetMouseX() / GetMouseY() // → Obtém a posição do mouse.
+
+// texturas e imagens
+LoadTexture("imagem.png") // → Carrega uma imagem como textura.
+UnloadTexture(texture) // → Libera a textura da memória.
+DrawTexture(texture, x, y, COLOR_WHITE) // → Desenha uma textura na tela.
+
+// Áudio 
+LoadSound("som.wav") // → Carrega um efeito sonoro.
+PlaySound(sound) // → Toca o som carregado.
+UnloadSound(sound) // → Libera a memória do som carregado.
+
+// Controle de Tempo
+GetFrameTime() // → Retorna o tempo em segundos do último frame.
+GetTime() // → Retorna o tempo total desde o início do programa.
+WaitTime(segundos)// → Pausa o programa por um tempo específico.
+
+// Gerenciamento de FPS
+SetTargetFPS(60) // → Define o FPS alvo.
+GetFPS() // → Obtém os FPS atuais.
+
+// Elementos 3D
+BeginMode3D(camera) // → Inicia o modo de renderização 3D.
+DrawCube(position, width, height, length, COLOR) // → Desenha um cubo 3D.
+EndMode3D() // → Finaliza o modo de renderização 3D.
+
+
+
